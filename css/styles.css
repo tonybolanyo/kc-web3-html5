@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'batman';
+    src: url('../fonts/batmfo__.ttf')
+}   
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -5,4 +9,62 @@
 body {
     margin: 0;
     padding: 0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(201,201,201,.9);
+}
+
+.navbar > .navbar-list {
+    float: right;
+    margin: 0;
+}
+
+.navbar > .navbar-list > .navbar-item {
+    display: inline;
+}
+
+.navbar > .navbar-list > .navbar-item a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar > .navbar-list > .navbar-item.active a {
+    background: #A4A4A4;
+    color: #F7F7F7;
+}
+
+.header > .title-img {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/batman.jpg') center center no-repeat;
+    background-size: cover;
+}
+
+.header > .title {
+    position: absolute;
+    top: 65%;
+    width: 100vw;
+    text-align: center;
+    color: #FFF;
+    z-index: 1;
+    font-family: batman, sans-serif;
+    font-size: 100px;
+}
+
+.header > .title-cite {
+    font-family: batman, sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    color: #FFF;
+    font-size: 28px;
 }
