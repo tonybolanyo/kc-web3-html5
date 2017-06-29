@@ -88,6 +88,18 @@ body {
     font-size: 28px;
 }
 
+.section-reverse {
+    background-color: rgba(0, 0, 0, .92);
+    color: #f7f7f7;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+}
+
+.section-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .about-me > .batman-video {
     float: left;
     max-width: 50%;
