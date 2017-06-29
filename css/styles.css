@@ -26,12 +26,14 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(201,201,201,.9);
+    background-color: #f7f7f7;
 }
 
 .navbar > .navbar-list {
     float: right;
     margin: 0;
+    list-style-type: none;
+    font-size: 0;
 }
 
 .navbar > .navbar-list > .navbar-item {
@@ -43,6 +45,12 @@ body {
     padding: 20px;
     text-decoration: none;
     color: #333;
+    font-size: 16px;
+}
+
+.navbar > .navbar-list > .navbar-item a:hover {
+    color: #f7f7f7;
+    background-color: #a4a4a4;
 }
 
 .navbar > .navbar-list > .navbar-item.active a {
