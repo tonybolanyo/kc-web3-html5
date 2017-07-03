@@ -27,6 +27,7 @@ body {
     top: 0;
     width: 100%;
     background-color: #f7f7f7;
+    z-index: 999;
 }
 
 .navbar > .navbar-list {
@@ -82,6 +83,9 @@ body {
     z-index: 1;
     font-family: batman, sans-serif;
     font-size: 100px;
+    visibility: hidden;
+    animation: titleAnimation 2s forwards;
+    animation-delay: .8s;
 }
 
 .header > .title-cite {
@@ -92,6 +96,8 @@ body {
     width: 100%;
     color: #FFF;
     font-size: 28px;
+    opacity: 0;
+    animation: subtitleAnimation 3s forwards 1s;
 }
 
 .section-reverse {
@@ -235,4 +241,34 @@ th, td {
 
 tbody > tr:hover {
     background-color: #dedddd;
+}
+
+@keyframes titleAnimation {
+    0% {
+        font-size: 200px;
+    }
+
+    50% {
+        font-size: 180px;
+    }
+
+    100% {
+        font-size: 100px;
+        visibility: visible;
+    }
+}
+
+@keyframes subtitleAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
 }
